@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="MsgApp">
+    <head>
+        <meta charset="utf-8">
+        <script src="angular.min.js"></script>
+        <script src="ex_expressions_interpolation.js"></script>
+        <title>Expressions and Interpolation</title>
+    </head>
+    <body>
+        <h1>Expressions and Interpolation</h1>
+        <div ng-controller="MsgController">
+            {{name}} <br>
+            has a message for you:<br>
+            {{sayMessage()}}
+            <div>
+                <button ng-click="feedGoog()">Feed Goog</button>
+                <br>
+                <img ng-src="images/goog_{{stateOfBeing}}.jpg">
+            </div>
+        </div>
+    </body>
+</html>
